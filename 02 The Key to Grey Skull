@@ -1,0 +1,10 @@
+def hacktober(plainText):
+  ab = []
+  for x in range(len(plainText)):
+    if plainText[x].isalpha():
+      ab.append(x)
+  y = max(ab)
+  z = min(ab)
+  output = plainText[0:z]+plainText[z].upper()+plainText[z+1:y].lower()+plainText[y].upper()+plainText[y+1:len(plainText)]
+  
+  return output
