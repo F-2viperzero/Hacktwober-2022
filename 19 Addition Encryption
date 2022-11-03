@@ -1,0 +1,15 @@
+array_integers = [5,4,8,26,4,5,5,3,5,23,5,3]
+
+
+def hacktober():
+  #is counter the simplest way?
+  sums = []
+  for x in range(len(array_integers)):
+    for y in range(len(array_integers)):
+      if x == y:
+        continue
+      else:
+        sum = array_integers[x] + array_integers[y]
+        sums.append(sum)
+  sums = list(dict.fromkeys(sums))
+  return len(sums)
