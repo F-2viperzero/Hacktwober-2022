@@ -1,0 +1,10 @@
+def parrotyByte(pb):
+  total = 0
+  for i in range(len(pb)):
+    a = pb[i].count('A')
+    if a%2 == 0:
+      total = total + 1
+  if total == 8:
+    return 'valid'
+  else:
+    return 'invalid'
