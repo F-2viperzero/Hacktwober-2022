@@ -1,0 +1,21 @@
+def hacktober(plaintext):
+  data = []
+  plaintext = plaintext[::-1]
+  start=0
+  length=1
+  while start+length < len(plaintext):
+    res = plaintext[start:start+length]
+    res = res[::-1]
+    data.append(list(res))
+    start=start+length
+    length+=1
+  res = plaintext[start:]
+  res = res[::-1]
+  data.append(list(res))
+
+  newList = []
+  for x in data:
+    if x :
+      newList.append(x)
+
+  return newList[::-1]
