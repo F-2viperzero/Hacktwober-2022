@@ -1,0 +1,18 @@
+import hashlib
+
+from english_words import english_words_set as ews
+
+# Delete line 5 to 14 - it crashes replit
+for x in ews:
+  for y in ews:
+    hashlib.md5
+    z = x + y
+    a = hashlib.md5(z.encode()).hexdigest()
+    if '0000000' in str(a):
+      print(z)
+
+
+
+def Hacktober():
+
+  return ("potlatchScribners")
