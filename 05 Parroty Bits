@@ -1,0 +1,14 @@
+def o(parrotyByte):
+  x = parrotyByte.count('A')
+  if x%2 == 1:  
+    return "valid"
+  else:
+    return "invalid"
+
+#e parity function
+def e(parrotyByte):
+  x = parrotyByte.count('A')
+  if x%2 == 0:
+    return "valid"
+  else:
+    return "invalid"
