@@ -1,0 +1,13 @@
+def Hacktober(cypherText):
+  array = cypherText
+  FL = []
+  SL = []
+  for x in range(len(cypherText)):
+    for y in range(len(cypherText[x])):
+      FL.append(array[y])
+  for x in range(len(cypherText)):
+    for y in range(len(cypherText[x])):
+      SL.append(FL[x][y]) 
+  return(''.join(SL))
+
+  return "yo!"
