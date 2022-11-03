@@ -1,0 +1,10 @@
+def hacktober(key, num, string_list):
+  total = 0
+  z = 0
+  for x in range(num):
+    for y in string_list[x]:
+      if y == key:
+        total = total + 1
+    z = z + 1
+
+  return total
