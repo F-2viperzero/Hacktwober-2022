@@ -1,0 +1,7 @@
+def Hacktober(key, values):
+  SecureKey = 0
+  #code here
+  for x in range(len(values)):
+    if x == key:
+      SecureKey = SecureKey + 1
+  return SecureKey
