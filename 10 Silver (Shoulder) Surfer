@@ -1,0 +1,8 @@
+from english_words import english_words_set as ews
+
+
+def Hacktober():
+    for x in ews:
+        if len(x) >= 6:
+            if x[0] == 'g' and x[5] == 'i' and x[6] == 'u':
+                return x
