@@ -1,0 +1,11 @@
+def hacktober(plainText):
+  newstr = ""
+  for i in range(0,(len(plainText))):
+    if (i == 0) or (i == len(plainText)-1):
+      newstr += plainText[i].upper()
+    else:
+      newstr += plainText[i].lower()
+
+  return newstr
+
+print(hacktober("Is this working"))
