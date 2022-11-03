@@ -1,0 +1,9 @@
+def hacktober():
+  for x in range(100):
+    filename = "BOX" + str(x)+".txt"
+    f = open(filename, "r")
+    data = f.read().split("\n")
+    f.close()
+    for y in range(len(data)):
+      if data[y] == "needle":
+        return filename
