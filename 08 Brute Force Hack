@@ -1,0 +1,19 @@
+from english_words import english_words_set as ews
+
+def Hacktober(w):
+    w = list(w)
+    yourList = []
+    count = 0
+    check = [[i, pos] for pos, i in enumerate(w) if i != '#']
+    for i in ews:
+        count = 0
+        if len(i) == len(w):
+            for c in check:
+                if c[0] != i[int(c[1])]:
+                    break
+                else:
+                    count += 1
+            if count == len(check):
+                count = 0 
+                yourList.append(i)
+    return sorted(yourList)
