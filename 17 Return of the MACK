@@ -1,0 +1,8 @@
+def hacktober(macAddress):
+    secure = False
+    #your code here
+    if "YYY" in macAddress and macAddress.count("X")>1:
+     return False
+    else:
+      return True
+    return secure
