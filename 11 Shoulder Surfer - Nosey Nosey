@@ -1,0 +1,3 @@
+def Hacktober():
+
+  return 'Hacktober22'
