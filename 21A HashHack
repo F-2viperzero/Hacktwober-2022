@@ -1,0 +1,25 @@
+import hashlib
+from random import randint
+
+
+hashlib.md5
+
+
+knownWords = ['recluse', 'cattle', 'exorcist', 'aficionado', 'diathermy', 'Paula', 'chipmunk', 'betwixt', 'kibitz', 'shuttlecock', 'format', 'prickle', 'niacin', 'Glaswegian', 'pronominal', 'Australia', 'Roman', 'budgetary', 'postmodern', "q's", 'codpiece', 'roast', 'palmate', 'down', 'stalactite', 'Copenhagen', 'sweetish', 'brouhaha', 'arouse', 'recital', 'gut', 'bongo', 'biscuit', 'prosciutto', 'paean', 'foe', 'Judy', 'matte', 'Mycenaean', 'sportswriter', 'vice', 'Frankel', 'shish', 'Seminole', 'downbeat', 'caviar', 'objet', 'soothsayer', 'whet', 'Fontaine', 'notocord', 'tincture', 'coriander', 'Schmidt', 'trio', 'establish', 'silly', 'Bella', 'grandfather', 'whose', 'yachtsman', 'Quakeress', 'random', 'reb', 'verbose', 'eyelet', 'precipice', 'myself', 'briny', 'factious', 'ostensible', 'fixture', 'eighteen', 'Mimi', 'chickpea', 'Randall', 'fled', 'invertebrate', 'squeamish', 'slack', 'Landis', 'walk', 'Reese', 'Galway', 'predicate', 'locutor', 'message', 'philosophy', 'mastodon', 'Firestone', 'entomology', 'bullish', 'growth', 'rink', 'hallucinogen', 'grand', 'fraudulent', 'powdery', 'code', 'login']
+pos = []
+
+
+for x in knownWords:
+  for y in knownWords:
+    pos.append(x+y)
+
+for x in pos:
+  hashlib.md5
+  y = hashlib.md5(x.encode()).hexdigest()
+  if '11111' in str(y):
+    print(x)
+
+
+
+def Hacktober():
+  return 'growthaficionado'
