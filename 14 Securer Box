@@ -1,0 +1,6 @@
+def getBox(s, m):
+  if len(m) > 0:
+    m1 = m.pop(1); m0 = m.pop(0);
+    return getBox(((s - m1) if m0 == 3 else ((s + m1) if m0 == 4 else ((s  +m1 * 100) if m0 ==1 else(s-m1*100)))),m);
+  else:
+    return s;
