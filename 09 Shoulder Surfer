@@ -1,0 +1,9 @@
+from english_words import english_words_set as ews 
+
+def Hacktober():
+  #add possible words to this
+  bruteForce = []
+  for word in ews:
+    if len(word) == 8:
+      bruteForce.append(word)
+  return sorted(bruteForce)
