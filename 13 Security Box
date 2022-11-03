@@ -1,0 +1,8 @@
+def getBox(startIndex, ListOfMoves):
+  index = -1
+  total = 1
+  for x in range(len(ListOfMoves)):
+    total = total + x
+  index = index + total
+  #code here
+  return index
