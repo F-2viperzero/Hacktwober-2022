@@ -1,0 +1,16 @@
+from english_words import english_words_set as ews 
+
+
+
+def Hacktober(length):
+  count = 0
+  for x in ews:
+    if len(x) == length:
+      count = count + 1
+    else:
+      count = count
+  return (count)
+
+#Testing!
+#Delete when complete
+print (Hacktober(6))
